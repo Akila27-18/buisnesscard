@@ -1,0 +1,1 @@
+Akilacard.wsgi.application
