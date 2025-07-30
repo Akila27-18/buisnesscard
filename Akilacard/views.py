@@ -12,4 +12,4 @@ def card_view(request):
     }
     
     
-    return render(request, "card.html", context)
+    return render(request, "index.html", context)
