@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to right, #071421, #6f1313);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card Container */
+.card-body {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(from right, pink,red);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Image */
+.card-img-top {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0d6efd;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Card Content */
+.card-body {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #0d6efd;
+}
+
+.card-body p {
+    margin: 5px 0;
+}
+
+/* QR Footer */
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 15px;
+}
+
+/* Button */
+.btn-outline-primary {
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 6px 18px;
+    font-weight: 500;
+}
+
+/* QR Code */
+.card-footer img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+/* Simple Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
