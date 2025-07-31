@@ -5,9 +5,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Akilacard.urls')),  # include your app's routes
+    path('', include('Bcard.urls')),  # include your app's routes
 ]
 
 # Serve media files in development
 if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
